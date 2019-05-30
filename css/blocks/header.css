@@ -2,12 +2,17 @@
 	background: url(../../img/header-bg.jpg) center top no-repeat #000;
 	-webkit-background-size:cover;
 	background-size: cover;
-	max-width: 1700px;
+  max-width: 1700px;
 	height: 901px;
 }
 
-header__wrap{
-  padding-bottom: 65px;
+.header__layer{
+   background-color: #1a1a1a;
+  /* opacity: 0.5;*/
+}
+
+.header__wrap{
+  padding-bottom: 47px;
 	
 }
 
@@ -16,6 +21,7 @@ header__wrap{
 		grid-template-columns: 224px 1fr;
 		grid-column-gap: 
 		padding-top: 40px;
+		align-items: center;
 	}
 
 .header__info{
@@ -53,11 +59,14 @@ header__wrap{
   color: aqua;
 }
 
-.header__btn{
-  text-decoration: none;
+.header__btn-down{
   display: block;
   margin: 0 auto;
   width: 84px;
   height: 42px;
+}
+
+.header__btn{
+  text-decoration: none;
   cursor:pointer;
 }
