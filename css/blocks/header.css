@@ -59,16 +59,14 @@
   color: aqua;
 }
 
-.header__btn-down{
-  display: block;
-  margin: 0 auto;
-  width: 84px;
-  height: 42px;
-}
-
 .header__btn{
-  text-decoration: none;
-  cursor:pointer;
+	display: block;
+	margin: 0 auto;
+	width: 84px;
+	height: 42px;
+	text-decoration: none;
+	cursor:pointer;
+	animation: animateArrow 1s infinite;
 }
 
 @media (max-width:1200px) {
@@ -109,5 +107,17 @@
 	.header__link:hover{
 		  letter-spacing: 9px;
 		  color: lawngreen;
+	}
+}
+
+@keyframes animateArrow {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(25px);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }
