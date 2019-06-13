@@ -5,6 +5,10 @@
 	flex-wrap: wrap;
 }
 
+.footer__menu .menu__list {
+	justify-content: flex-start;
+}
+
 .menu__item{
 		/* Style for "MENS" */
 	color: #ffffff;
@@ -17,6 +21,15 @@
 	transition-property: color;
 	transition-duration: 500ms;
 }
+
+.footer__menu .menu__link {
+	color: #000000;
+}
+
+.footer__menu .menu__item {
+	color: #000000;
+}
+
 
 .menu__item:first-child{
 	margin-left: 0;
@@ -47,7 +60,7 @@
 }
 
 @media (max-width: 768px) {
-	.menu__list{
+	.menu__list, .footer__menu .menu__list{
 		justify-content: center;
 	}
 }
